@@ -1,5 +1,3 @@
-Here's the updated `README.md` file with your GitHub repository link:
-
 
 # Custom Electron Web Browser
 
