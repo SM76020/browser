@@ -1,0 +1,44 @@
+# This section explains how the code works, the requirements, and how to run the browser.
+
+Project Overview:
+This project is a simple web browser built using Electron, a framework for building cross-platform desktop applications using web technologies such as HTML, CSS, and JavaScript. The browser includes basic functionalities like navigation, reloading, and opening pages in the default browser.
+
+Key Features:
+
+1. Navigation: The browser allows users to navigate to a specific URL by typing it in the URL bar and clicking the "Go" button. It also includes "Back" and "Forward" buttons for navigating through the browsing history.
+2. URL Bar Auto-Update: The URL bar automatically updates to reflect the current URL of the webview when the user navigates to a new page.
+3. Default Homepage: The browser loads a default homepage (Google in this case) when it starts.
+4. External Link Handling: The browser opens external links in the default system browser instead of the Electron window.
+5. Error Handling: The browser logs errors to the console when a page fails to load, including the error code and description.
+
+Technical Requirements:
+
+1. Electron: The project uses Electron as the framework for building the desktop application.
+2. Node.js: The project requires Node.js to run, as it is used by Electron.
+3. HTML, CSS, and JavaScript: The project uses HTML, CSS, and JavaScript for the user interface and functionality.
+4. Electron Preload Script: The project uses a preload script to enable Node.js integration in the webview, allowing for the use of Node.js modules and shell operations.
+5. Webview: The project uses a webview to render web pages within the application.
+
+Development Environment:
+
+1. Node.js: Ensure Node.js is installed on the development machine.
+2. Electron: Install Electron using npm by running `npm install electron` in the project directory.
+3. Code Editor: Use a code editor or IDE of choice to edit the project files.
+4. Debugging Tools: Use the browser's developer tools or the Node.js console for debugging purposes.
+
+Build and Run:
+
+1. Build: The project does not require a build step as it is a simple Electron application.
+2. Run: To run the browser, follow these steps:
+	* Open a terminal or command prompt in the project directory.
+	* Ensure Node.js and Electron are installed by running `node -v` and `electron -v` respectively.
+	* Run the command `npx electron .` to start the browser.
+	* The browser will launch and display the default homepage.
+	* You can now use the browser to navigate to different URLs, reload pages, and open external links in the default system browser.
+
+Troubleshooting:
+
+* If the browser fails to start, check the console output for any error messages.
+* Ensure that Node.js and Electron are installed correctly.
+* Verify that the project directory is correct and the `electron .` command is run from the correct location.
+
